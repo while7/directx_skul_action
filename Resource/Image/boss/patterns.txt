@@ -1,0 +1,21 @@
+일단 slash를 할때에 쓸 검기 png 만들기 회전하면 되기에 "한장만 길게"
+
+일단 idle상태로 있다가 ( 피격 O ) disappear를 하고 appear로 등장후 아래 패턴을 진행
+*** 패턴 진행 피격 X ***
+
+hp : 100% ~ 75% ( 5초 마다 )
+
+1:	slash_h -> disappear
+2:	slash_v -> disappear
+3:	diagonal -> diagonal_fin -> disappear
+
+hp : 75% ~ 50% ( 3초 마다 )
+
+4:	attack_a -> disappear -> appear -> attack_b -> disappear -> appear -> attack_c -> disappear
+5:	diagonal(LT->RB) -> diagonal_fin -> disappear
+	diagonal(RT->LB) -> diagonal_fin -> disappear
+
+hp : 50% ~ 0% ( 1초 마다 )
+
+6:	dash(L || R) -> rush -> disappear
+	dash(L || R) -> rush -> disappear
